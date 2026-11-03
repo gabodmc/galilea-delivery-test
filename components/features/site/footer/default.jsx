@@ -1,10 +1,14 @@
 import React from "react";
 
-const Footer = () => (
-  <footer className="site-footer">
-    <p>© 2024 Demo News. All rights reserved.</p>
-  </footer>
-);
+const Footer = () => {
+  const year = new Date().getFullYear();
+
+  return (
+    <footer className="site-footer">
+      <p>{`© ${year} Demo News. All rights reserved.`}</p>
+    </footer>
+  );
+};
 
 Footer.label = "Site footer";
 
